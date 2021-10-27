@@ -652,17 +652,32 @@ def a_s():
 									
  
         except:
-            pass
-
-    p = ThreadPool(30)
-    p.map(main, id)
-    print 47 * '-'
-    print ' \x1b[1;92mCrack Done'
-    print '\x1b[1;92m Total Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
-    print 47 * '-'
-    raw_input('\x1b[1;93m Press enter to back')
-    choice_crack()
-
-
+ 
+			pass
+ 
+		
+ 
+	p = ThreadPool(30)
+ 
+	p.map(main, id)
+ 
+	print (" ")
+ 
+	print (47*"-")
+ 
+	print ("[!] Process has completed")
+ 
+	print ("[!] Now You Get Out Total Cp/Ok : "+str(len(cps)) + "/"+str(len(oks)))
+ 
+	print (47*"-")
+ 
+	raw_input("\t\x1b[0;97mPress enter to main menu back")
+ 
+	menu()
+ 
+	
+ 
 if __name__ == '__main__':
-    menu()
+ 
+    main()
+ 
